@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empleia - Bolsa de Trabajo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .vacantes, #precios {
+      padding: 20px;
+    }
+    .vacante {
+      background: white;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .vacante h3 {
+      margin-top: 0;
+    }
+    .btn-aplicar {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #003366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #003366;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #003366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Empleia</h1>
+  <p>Encuentra tu próxima oportunidad laboral o publica vacantes para tu empresa</p>
+</header>
+
+
+<section id="precios">
+  <h2>Publica tu Vacante en Empleia</h2>
+  <p>En Empleia ofrecemos precios competitivos para que tu empresa publique vacantes sin pagar de más. Nuestro precio es <strong>$20.000 COP</strong> por vacante publicada.</p>
+
+  <p>Publica tus vacantes con Empleia y aprovecha nuestra tarifa accesible sin comprometer la calidad del servicio.</p>
+
+  <!-- Llamada a la acción (CTA) -->
+  <a href="#publicar" class="cta-button">Publica tu Vacante Ahora</a>
+</section>
+
+
+<section id="publicar">
+  <h2>Publica tu Vacante</h2>
+  <p>Para publicar una vacante, realiza un pago de **$20.000 COP** a nuestro Nequi:</p>
+  <ul>
+    <li><strong>Nequi:</strong> 321 934 3347</li>
+    <li><strong>Titular:</strong> Helena Huertas</li>
+  </ul>
+  <p>Escanea el código QR con tu app Nequi:</p>
+  <img src="codigo-qr-nequi.png" alt="Código QR Nequi" width="200" />
+
+  <form>
+    <h3>Formulario para Publicar Vacante</h3>
+    <input type="text" name="empresa" placeholder="Nombre de la empresa" required />
+    <input type="text" name="puesto" placeholder="Puesto a publicar" required />
+    <textarea name="descripcion" rows="4" placeholder="Descripción del puesto" required></textarea>
+    <input type="file" name="comprobante" accept="image/*,application/pdf" required />
+    <button type="submit">Enviar Vacante</button>
+  </form>
+</section>
+
+</body>
+</html>
